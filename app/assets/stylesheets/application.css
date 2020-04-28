@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+#root{
+    display: flex;
+    margin: auto;
+}
+ #auth-form{
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
