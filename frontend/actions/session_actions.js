@@ -7,8 +7,10 @@ export const login = (user) => {
     return (dispatch) => {
         return ( API.login(user)
         .then(
-            (currentUser)=>( dispatch(receiveCurrentUser(currentUser))),
-            errors => dispatch(receiveErrors(errors.responseJSON))))
+            currentUser=>dispatch(receiveCurrentUser(currentUser)),
+            errors => dispatch(receiveErrors(errors.responseJSON))
+            )
+        )
     }
 
 }

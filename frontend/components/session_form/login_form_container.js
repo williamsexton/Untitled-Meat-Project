@@ -4,7 +4,7 @@ import { login } from '../../actions/session_actions';
 
 const mSTP = state => ({
     errors: state.errors.session,
-    formType: "login"
+    formType: "Sign in to Untitled Meat Project"
 })
 const mDTP = dispatch => ({
     processForm: user => dispatch(login(user))

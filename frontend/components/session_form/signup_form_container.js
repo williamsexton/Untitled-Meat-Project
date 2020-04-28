@@ -4,7 +4,7 @@ import { signup } from '../../actions/session_actions'
 
 const mSTP = state => ({
     errors: state.errors.session,
-    formType: "signup"
+    formType: "Create your Account"
 })
 const mDTP = dispatch => ({
     processForm: user => dispatch(signup(user))
