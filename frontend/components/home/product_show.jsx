@@ -11,7 +11,7 @@ export default class CategoryShow extends React.Component {
     if (!product) return null;
     return (
       <div id="product-show">
-        <div id="product-show-picture">placeholder</div>
+        <img id="product-show-picture" src={product.imgUrl} alt="placeholder" />
         <div id="product-show-options">
           <h1 id="product-show-name">{product.name}</h1>
           <h2 id="product-show-price">${product.price}</h2>

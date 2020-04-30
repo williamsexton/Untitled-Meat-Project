@@ -11,7 +11,7 @@ const CategoryDisplay = ({ category, products }) => (
 
     </div>
       <ul className="category-products">
-      {products.slice(0, 3).map((product) => <Link key= { product.id } to={`/products/${product.id}`}><ProductDisplay name={product.name} price={product.price} /></Link>)}
+        {products.slice(0, 3).map((product) => <Link key= { product.id } to={`/products/${product.id}`}><ProductDisplay product={product} /></Link>)}
     </ul>
   </div>
 );

@@ -14,6 +14,7 @@
         prods.each do |product|
             json.set! product.id do
                 json.extract! product, :id, :name, :price
+                json.imgUrl url_for(product.photo)
             end
         end
 

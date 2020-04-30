@@ -54,13 +54,14 @@ class SessionForm extends React.Component {
             value={this.state.password}
             onChange={this.handleInput('password')}
           />
-          <p id="demo-login" onClick={()=>this.demoLogin()}>Demo Login</p>
+         
 
           {
             (this.props.formType === 'Sign in to Untitled Meat Project')
               ? (
                 <div>
-                  <button type="submit">SIGN IN WITH EMAIL</button>
+                <p id="demo-login" onClick={() => this.demoLogin()}>Demo Login</p>
+                  <button id="auth-button" type="submit">SIGN IN WITH EMAIL</button>
                   <br />
                   <div id="auth-switch">
                     <div>Don't have an account?  </div>
@@ -72,7 +73,7 @@ class SessionForm extends React.Component {
               )
               : (
                 <div>
-                  <button type="submit">SIGN UP</button>
+                  <button id="auth-button" className="signup" type="submit">SIGN UP</button>
                   <br />
                   <div id="auth-switch">
                     <div>Already have an account?</div>

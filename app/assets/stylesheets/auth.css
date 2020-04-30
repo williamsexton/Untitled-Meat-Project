@@ -42,17 +42,7 @@
      margin: 10px;
      border-top: solid rgb(230, 230, 230) 1px;
  }
- #auth-form button{
-     width: 100%;
-     font-size: 20px; 
-     margin-top: 10px;
-     color: white;
-     background-color: rgb(277, 98, 39);
-     cursor: pointer;
-     padding: 12px;
-     font-weight: 700;
-     margin-bottom: 5px;
- }
+ 
  #auth-form button:hover{
   background-color: black;
   animation-name: buttonAnimation;
@@ -78,4 +68,18 @@
      cursor: pointer;
      font-size: 12px;
      margin: 10px 0px 0px
+ }
+ #auth-button{
+    width: 100%;
+     font-size: 20px; 
+     margin-top: 10px;
+     color: white;
+     background-color: rgb(277, 98, 39);
+     cursor: pointer;
+     padding: 12px;
+     font-weight: 700;
+     margin-bottom: 5px;
+ }
+ #auth-button.signup{
+     margin-top: 25px;
  }

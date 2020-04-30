@@ -9,4 +9,6 @@ class Product < ApplicationRecord
     through: :inclusions, 
     source: :includable, 
     source_type: 'Category'
+
+    has_one_attached :photo
 end

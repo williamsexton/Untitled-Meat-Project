@@ -5,6 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'open-uri'
+
+# demo_user = User.create(username: "Andy", email: "andy@email.com", password: "password")
+
+# file = open('https://<your_bucket>.<your_region>.amazonaws.com/<optional_folder_name>/<some_file>.jpg')
+
+# demo_user.avatar.attach(io: file, filename: 'some_file.jpg')
+
 
 users = User.create([{ email: 'will@meat.gov', password:'governmeat' },
     { email: 'Willy@meat.meat', password:'meatman' },
@@ -24,7 +32,33 @@ users = User.create([{ email: 'will@meat.gov', password:'governmeat' },
     meat10 =Product.create({ name: 'Horsedrawn Farms Pork Belly', price:16, subscription_price:15, description:'Delectable Pork, perfect for any meal any time.' })
     meat11 =Product.create({ name: 'Horsedrawn Farms Pork Butt', price:16, subscription_price:15, description:'Delectable Pork, perfect for any meal any time.' })
     meat12 =Product.create({ name: 'Midnight\'s Farm Pork Belly', price:16, subscription_price:15, description:'Delectable Pork, perfect for any meal any time.' })
+    
+    file1 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat1.jpg")
+    file2 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat2.jpg")
+    file3 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat3.jpg")
+    file4 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat4.jpg")
+    file5 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat5.jpg")
+    file6 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat6.jpg")
+    file7 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat7.jpg")
+    file8 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat8.jpg")
+    file9 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat9.jpg")
+    file10 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat10.jpg")
+    file11 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat11.jpg")
+    file12 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat12.jpg")
+    
 
+    meat1.photo.attach(io: file1, filename: "meat1.jpg")
+    meat2.photo.attach(io: file2, filename: "meat2.jpg") 
+    meat3.photo.attach(io: file3, filename: "meat3.jpg") 
+    meat4.photo.attach(io: file4, filename: "meat4.jpg") 
+    meat5.photo.attach(io: file5, filename: "meat5.jpg") 
+    meat6.photo.attach(io: file6, filename: "meat6.jpg") 
+    meat7.photo.attach(io: file7, filename: "meat7.jpg") 
+    meat8.photo.attach(io: file8, filename: "meat8.jpg") 
+    meat9.photo.attach(io: file9, filename: "meat9.jpg") 
+    meat10.photo.attach(io: file10, filename: "meat10.jpg")
+    meat11.photo.attach(io: file11, filename: "meat11.jpg")
+    meat12.photo.attach(io: file12, filename: "meat12.jpg")
 
     category1=Category.create({name: 'Luxury Cuts', description: '"deccedant", "luxurious", "fit for a king", these descriptions jump to mind when presented with this assortment of high-class meats'})
     category2=Category.create({name: 'Kitchen Essentials', description: 'Budget efficient, responibly sourced, and overwhlmingly delicious. There\'s a reason these are kitchen essentials'})

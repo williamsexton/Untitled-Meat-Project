@@ -20,9 +20,7 @@ export default class CategoryShow extends React.Component {
           {products.map((product) => (
             <Link to={`/products/${product.id}`}>
               <ProductDisplay
-                key={product.id}
-                name={product.name}
-                price={product.price}
+                product={product}
               />
             </Link> 
           ))}

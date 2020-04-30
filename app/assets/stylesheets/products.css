@@ -1,5 +1,5 @@
 #product-show{
-  margin-top: 35px;
+  padding-top: 100px;
   display: flex;
   justify-content: flex-end;
 }
@@ -12,11 +12,12 @@
 }
 #product-show-picture{
   width: 30vw;
+  height: 30vw;
   text-align: center;
-  padding-top: 15vw;
   border: solid black 1px;
-  height: 15vw;
   margin-right: 15px;
+  object-fit: cover;
+  overflow: hidden;
 }
 #product-show-name{
   font-weight: bold;

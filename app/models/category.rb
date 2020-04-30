@@ -9,4 +9,5 @@ class Category < ApplicationRecord
     has_many :products, 
     through: :inclusions
 
+    has_one_attached :photo
 end
