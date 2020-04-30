@@ -14,13 +14,13 @@ export default class HomeDisplay extends React.Component {
 
   render() {
     const { categories, products } = this.props;
-
+    function propProds(category) {
+      const propProds = category.productIds.map((id) => products[id]);
+      return <CategoryDisplay key={category.id} category={category} products={propProds} />
+    }
     return (
       <ul className="all-categories">
-        {Object.values(categories).map((category) => {
-          const propProds = category.productIds.map((id) => products[id]);
-          return <CategoryDisplay key={category.id} category={category} products={propProds} />
-        })}
+        {Object.values(categories).map((category) => propProds(category))}
       </ul>
     );
   }

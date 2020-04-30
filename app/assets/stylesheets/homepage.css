@@ -16,9 +16,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.category-title{
-  text-align: center;
-}
+
 .category-products{
   display: flex;
   justify-content: center;
@@ -38,7 +36,7 @@
   
 }
 
- .product-display:hover{
+.product-display:hover{
   animation-name: hoverAnimation;
   animation-duration: .2s;
   width:27vw; 
@@ -50,6 +48,57 @@
   0% {width:25vw; height:20vw; margin: 14px;}
   100% {width:27vw; height:21vw; margin:0px;}
 }
+
+.category-header{
+  text-align: center;
+}
+
+.category-title{
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+#category-blurb{
+  font-size: 14px;
+  margin-top: 5px;
+  color: gray;
+}
+.category-link{
+  margin-bottom: 30px;
+  margin-top: 7px;
+}
+#home-banner{
+  width: 100%;
+  background: radial-gradient( yellow, red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0, auto;
+  height:300px;
+  font-size: 40px;
+}
+.category-show-banner{
+  width: 100%;
+  background: radial-gradient( yellow, red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height:300px;
+  font-size: 40px;
+}
+#category-show-description{
+  padding: 40px;
+}
+
+.category-show .category-products{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
 /* @keyframes spinnyBoyAnimation {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(1000deg);}

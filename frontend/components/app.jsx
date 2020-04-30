@@ -2,6 +2,8 @@ import React from 'react';
 import { Switch, Redirect,Route} from 'react-router-dom'
 import { AuthRoute, } from '../util/route_util';
 import NavBarContainer from './nav_bar/nav_bar_container';
+import CategoryShowContainer from './home/category_show_container';
+import ProductShowContainer from './home/product_show_container';
 import Home from './home/home'
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
@@ -12,6 +14,8 @@ const App = () => (
     <Switch>
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
+      <Route path="/categories/:id" component={CategoryShowContainer} />
+      <Route path="/products/:id" component={ProductShowContainer} />
       <Route exact path="/" component={Home} />
       <Redirect path="/" to="/" />
     </Switch>
