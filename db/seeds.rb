@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-users = User.create([
+users = User.create([{ email: 'will@meat.gov', password:'governmeat' },
     { email: 'Willy@meat.meat', password:'meatman' },
  { email: 'hankhill@strickland-propane.net', password:'propane' },
 {email: 'hsimpson@aol.doh', password:'simpsons' }])
@@ -33,7 +33,7 @@ users = User.create([
     category5=Category.create({name: 'Beef', description: 'Meat of the cows, the beatiful red ambrosia that fuels life.'})
     category6=Category.create({name: 'Pork', description: 'Mmmmm... oink-oink-boys taste gooood'})
 
-])
+
 
 inclusions = Inclusion.create([
     {product_id: meat1.id, quantity: 1, includable_id: category1.id, includable_type:"Category"},
