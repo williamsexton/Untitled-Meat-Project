@@ -9,14 +9,14 @@ const Greeting = (props) => {
   return ( 
     <div id="navbar-options"> 
       <div className="auth-link-div">
-        &#9881;
+        <span id="gear-span">&#9881;</span>
         {(props.currentUser !== undefined) ? logoutButton : loginButton}
       </div>
       <div className="box-link-div"> 
-        🍱
+        <span id="gear-span">🍱</span>
       </div>
       <div className="box-link-div"> 
-        🔍
+        <span id="gear-span">🔍</span>
       </div>
   </div>
         )

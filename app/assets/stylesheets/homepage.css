@@ -1,0 +1,56 @@
+.home-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.all-categories{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+  width: 100%;
+}
+.category-display{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.category-title{
+  text-align: center;
+}
+.category-products{
+  display: flex;
+  justify-content: center;
+}
+.product-display{
+  border: solid 1px black;
+  width: 25vw;
+  height: 20vw;
+  margin: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+.product-name{
+  border-top: solid black 1px
+  
+}
+
+ .product-display:hover{
+  animation-name: hoverAnimation;
+  animation-duration: .2s;
+  width:27vw; 
+  height:21vw;
+  margin:0px;
+}
+
+@keyframes hoverAnimation {
+  0% {width:25vw; height:20vw; margin: 14px;}
+  100% {width:27vw; height:21vw; margin:0px;}
+}
+/* @keyframes spinnyBoyAnimation {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(1000deg);}
+} */
