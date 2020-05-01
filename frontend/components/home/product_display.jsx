@@ -6,7 +6,7 @@ const ProductDisplay = ({ product }) => {
     <div className="product-display">
       <img className="product-image" src={imgUrl} alt="" />
       <h1 className="product-name">{name}</h1>
-      <h2 className="product-price">${price}</h2>
+      <h2 className="product-price">Starting at ${price}</h2>
     </div>
   );
 };

@@ -3,7 +3,7 @@ prods = @category.products
 json.category do
     json.set! @category.id do 
         json.extract! @category, :id, :name, :description
-        
+        json.imgUrl url_for(@category.photo)
         json.productIds do
             ids = prods.map{|product| product.id}
             json.array! ids

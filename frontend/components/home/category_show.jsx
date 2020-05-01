@@ -13,9 +13,13 @@ export default class CategoryShow extends React.Component {
     return (
       <div className="category-show">
         <div className="category-show-banner">
+          <img id="category-show-banner-image" src={category.imgUrl} alt=""/>
           <h1 className="category-show-title">{category.name.toUpperCase()}</h1>
           <h2 id="category-show-description">{category.description}</h2>
         </div>
+        <div id="show-blurb">
+          For more up to date information on our products, reach out by email.
+      </div>
         <ul className="category-products">
           {products.map((product) => (
             <Link to={`/products/${product.id}`}>

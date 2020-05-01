@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const CategoryDisplay = ({ category, products }) => (
   <div className="category-display">
     <div className="category-header">
-      <h1 className="category-title">-{category.name.toUpperCase()}-</h1>
+      <h1 className="category-title">--- {category.name.toUpperCase()} ---</h1>
       <h2 id="category-blurb"> You can't go wrong with {category.name}</h2>
       <div className="category-link"><Link to={`/categories/${category.id}`}>SEE ALL {category.name.toUpperCase()} &gt;&gt;</Link></div>
 

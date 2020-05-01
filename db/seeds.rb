@@ -14,6 +14,7 @@ require 'open-uri'
 # demo_user.avatar.attach(io: file, filename: 'some_file.jpg')
 
 
+
 users = User.create([{ email: 'will@meat.gov', password:'governmeat' },
     { email: 'Willy@meat.meat', password:'meatman' },
  { email: 'hankhill@strickland-propane.net', password:'propane' },
@@ -32,7 +33,7 @@ users = User.create([{ email: 'will@meat.gov', password:'governmeat' },
     meat10 =Product.create({ name: 'Horsedrawn Farms Pork Belly', price:16, subscription_price:15, description:'Delectable Pork, perfect for any meal any time.' })
     meat11 =Product.create({ name: 'Horsedrawn Farms Pork Butt', price:16, subscription_price:15, description:'Delectable Pork, perfect for any meal any time.' })
     meat12 =Product.create({ name: 'Midnight\'s Farm Pork Belly', price:16, subscription_price:15, description:'Delectable Pork, perfect for any meal any time.' })
-    
+
     file1 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat1.jpg")
     file2 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat2.jpg")
     file3 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/meat3.jpg")
@@ -60,14 +61,27 @@ users = User.create([{ email: 'will@meat.gov', password:'governmeat' },
     meat11.photo.attach(io: file11, filename: "meat11.jpg")
     meat12.photo.attach(io: file12, filename: "meat12.jpg")
 
-    category1=Category.create({name: 'Luxury Cuts', description: '"deccedant", "luxurious", "fit for a king", these descriptions jump to mind when presented with this assortment of high-class meats'})
+    banner1 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/banner-luxury-cuts.jpg")
+    banner2 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/banner-kitchen-essentials.jpg")
+    banner3 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/banner-grass-fed.jpg")
+    banner4 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/banner-bbq-meats.jpg")
+    banner5 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/banner-beef.jpg")
+    banner6 = open("https://meat-project-seed.s3-us-west-1.amazonaws.com/banner-pork.jpg")
+
+    category1=Category.create({name: 'Luxury Cuts', description: '"decadent", "luxurious", "fit for a king", these descriptions jump to mind when presented with this assortment of high-class meats'})
     category2=Category.create({name: 'Kitchen Essentials', description: 'Budget efficient, responibly sourced, and overwhlmingly delicious. There\'s a reason these are kitchen essentials'})
     category3=Category.create({name: 'Grass Fed', description: 'The only kind of beef worth eating.'})
     category4=Category.create({name: 'BBQ Meats', description: 'Big Dino-sized meat hunks perfect for BBQ.'})
     category5=Category.create({name: 'Beef', description: 'Meat of the cows, the beatiful red ambrosia that fuels life.'})
     category6=Category.create({name: 'Pork', description: 'Mmmmm... oink-oink-boys taste gooood'})
 
-
+    
+    category1.photo.attach(io: banner1, filename: "luxury-cuts.jpg")
+    category2.photo.attach(io: banner2, filename: "kitchen-essentials.jpg")
+    category3.photo.attach(io: banner3, filename: "grass-fed.jpg")
+    category4.photo.attach(io: banner4, filename: "bbq-meats.jpg")
+    category5.photo.attach(io: banner5, filename: "beef.jpg")
+    category6.photo.attach(io: banner6, filename: "pork.jpg")
 
 inclusions = Inclusion.create([
     {product_id: meat1.id, quantity: 1, includable_id: category1.id, includable_type:"Category"},

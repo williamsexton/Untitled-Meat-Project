@@ -29,7 +29,6 @@
   justify-content: center;
 }
 .product-display{
-  border: solid 1px black;
   width: 25vw;
   height: 20vw;
   margin: 14px;
@@ -39,8 +38,25 @@
   text-align: center;
 }
 .product-name{
-  border-top: solid black 1px
+  padding-top: 20px;
+  background: repeating-linear-gradient(
+  70deg,
+  #ffffff,
+  #ebebed 4px,
+  #ffffff 4px,
+  #ffffff 7px
+);
   
+}
+.product-price{
+  padding: 15px 0px 20px;
+  background: repeating-linear-gradient(
+  70deg,
+  #ffffff,
+  #ffffff 4px,
+  #ebebed 4px,
+  #ebebed 7px
+);
 }
 
 .product-display:hover{
@@ -61,28 +77,47 @@
 }
 
 .category-title{
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 27px;
+  font-weight: 800;
   margin-top: 40px;
+  text-shadow: 2px 0px 2px black;
+  letter-spacing:3px;
 }
 #category-blurb{
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 5px;
   color: gray;
 }
 .category-link{
   margin-bottom: 30px;
-  margin-top: 7px;
+  margin-top: 10px;
+  font-size: 19px;
+  text-shadow: 1px 0px black;
+  letter-spacing:3px;
 }
 #home-banner{
   width: 100%;
-  background: radial-gradient( yellow, red);
+  background-image: url("https://meat-project-seed.s3-us-west-1.amazonaws.com/bannercropped.png");
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0, auto;
-  height:500px;
+  height:525px;
   font-size: 40px;
+}
+#home-banner-image{
+  height:100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#home-blurb{
+  padding: 40px;
+  background: radial-gradient( rgb(255, 251, 175), rgb(226, 224, 181));
+  border: solid 1px  rgb(255, 251, 175);
+  width: 100%;
+  text-align: center;
 }
 .category-show-banner{
   width: 100%;
@@ -91,12 +126,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
-  height:300px;
+  height:70vh;
   font-size: 40px;
+  position: relative;
+  z-index: -1;
+}
+#category-show-banner-image{
+  overflow: hidden;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 #category-show-description{
-  padding: 40px;
+  position: absolute;
+  top: 60%;
+  color: aliceblue;
+  text-shadow: 3px 3px black;
+  padding: 50px;
+}
+.category-show-title{
+  position: absolute;
+  top: 30%;
+  color: aliceblue;
+  text-shadow: 3px 3px black;
+
 }
 
 .category-show .category-products{
@@ -104,7 +157,24 @@
   flex-wrap: wrap;
 }
 
+#home-category-links{
+  display: flex;
+  width: 100%;
+  padding-top:55px;
+  padding-bottom: 12px;
+  justify-content: center;
+  background-color: black;
+}
+#home-category-links a{
+  padding-left: 50px;
+  padding-right: 50px;
+  color:white;
 
+}
+
+#bnner-link {
+  color: orange;
+}
 
 /* @keyframes spinnyBoyAnimation {
   0% {transform: rotate(0deg);}
