@@ -5,7 +5,7 @@
   z-index: 10;
   top: 0px;
   left: 0px;
-  background-color: rgb(150, 150, 150, 0.5);
+  background-color: rgba(150, 150, 150, 0.5);
 
 }
 #box-modal-inner{
