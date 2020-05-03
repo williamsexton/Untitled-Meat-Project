@@ -15,8 +15,28 @@ export default (props) => {
       <div id="home-blurb">
         With quality beef you can instantly step up the quality of your life. NEW BEEF DAILY!
       </div>
-      <HomeDisplayContainer/>
-      <h2>this is the footer</h2>
+      <HomeDisplayContainer />
+      <div id="home-footer">
+        <h2 id="home-footer-title">--- LATEST FROM UNTITLED MEAT PROJECT ---</h2>
+        <div id="home-footer-body">
+          <div id="footer-body-1">
+            <h3>Progress on the Wesbite</h3>
+            <p>
+              It is May 1st 2020, the homepage and category/product show pages are done
+              I am moving on to develop the cart and orders systems
+            </p>
+          </div>
+          <div id="footer-body-2">
+            <h3>About Me</h3>
+            <p>
+              My name is Will Sexton, I'm an aspiring web-designer and this is my first major
+              project, I built this site from the ground up on a rails backend using 
+              react and redux on the frontend to manage dynamic content. I used the S3 Amazon Web Service
+              for my image hosting, and sourced a majority of my images from google image searches for pictures of meat.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

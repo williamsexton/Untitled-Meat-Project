@@ -17,6 +17,6 @@
                 json.imgUrl url_for(product.photo)
             end
         end
-
     end
+    
 end

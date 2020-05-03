@@ -1,8 +1,9 @@
 export const fetchCategories = () => $.ajax({
-    method: "GET",
-    url: '/api/categories',
-})
+  method: 'GET',
+  url: '/api/categories',
+});
+
 export const fetchCategory = (id) => $.ajax({
-    method: "GET",
-    url: `/api/categories/${id}`,
-})
+  method: 'GET',
+  url: `/api/categories/${id}`,
+});

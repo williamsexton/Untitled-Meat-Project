@@ -4,6 +4,10 @@ class User < ApplicationRecord
     attr_reader :password
     validates :password_digest, presence:true
     before_validation :ensure_session_token
+    after_create :create_box
+    
+    has_one :box, dependent: :destroy
+    has_many :orders
 
     def self.find_by_credentials(email,pw)
         user = User.find_by(email:email)
@@ -28,5 +32,9 @@ class User < ApplicationRecord
 
     def ensure_session_token
         self.session_token ||= SecureRandom.urlsafe_base64
+    end
+
+    def create_box
+        Box.create({user_id: self.id})
     end
 end

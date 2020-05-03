@@ -5,8 +5,13 @@ import configureStore from './store/store';
 import Root from './components/root';
 import { login, signup } from './actions/session_actions';
 import { fetchProduct } from './actions/product_actions';
+import { fetchBox } from './actions/box_actions';
+import { fetchOrder, fetchOrders, createOrder} from './actions/order_actions';
+import { createInclusion, updateInclusion, deleteInclusion} from './actions/inclusion_actions';
 import { fetchCategory, fetchCategories } from './actions/category_actions';
-
+import * as boxAPI from './util/box_api_util'
+import * as inclusionAPI from './util/inclusion_api_util'
+import * as orderAPI from './util/order_api_util'
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -31,6 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
   window.fetchProduct = fetchProduct;
   window.fetchCategory = fetchCategory;
   window.fetchCategories = fetchCategories;
+  window.fetchOrder = fetchOrder;
+  window.createOrder = createOrder;
+  window.fetchOrders = fetchOrders;
+  window.fetchBox = fetchBox;
+  window.updateInclusion = updateInclusion;
+  window.createInclusion = createInclusion;
+  window.deleteInclusion = deleteInclusion;
+  window.boxAPI = boxAPI;
+  window.inclusionAPI = inclusionAPI;
+  window.orderAPI = orderAPI;
   // TESTING END
 
   const root = document.getElementById('root');

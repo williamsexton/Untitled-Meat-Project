@@ -1,7 +1,6 @@
 
  #auth-form{
      margin: auto;
-     margin-top: 30px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -14,6 +13,8 @@
  }
 
 #auth-title{
+    text-align: center;
+    width: 100%;
     margin-top:50px;
     font-size: 22px;
     font-weight: bold;
@@ -83,3 +84,13 @@
  #auth-button.signup{
      margin-top: 25px;
  }
+#phantom-div{
+    height:50px;
+    width: 100px;
+}
+#login-link.auth-link{
+    color:rgb(103, 103, 221)
+}
+#session-errors{
+    margin-bottom: 20px;
+}

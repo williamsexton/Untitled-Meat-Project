@@ -1,0 +1,1 @@
+json.extract! inclusion, :id, :quantity, :product_id, :includable_id, :includable_type
