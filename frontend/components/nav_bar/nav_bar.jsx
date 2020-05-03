@@ -5,7 +5,13 @@ import GreetingContainer from '../greeting/greeting_container';
 const NavBar = (props) => {
   return (
     <header id="banner">
-      <div id="dummy" />
+      <div id="dummy"> 
+        {(props.boxDisplay) ? (
+          <div onClick={(e) => props.hideBox(e)} id="box-modal-outer">
+            <div id="box-modal-inner"> box goes here</div>
+          </div>
+        ) : null}
+      </div>
       <div id="banner-link">
         <Link to="/">
           Untitled Meat Project

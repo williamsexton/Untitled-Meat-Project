@@ -125,7 +125,7 @@
   width: 100%;
   padding-top:55px;
   padding-bottom: 12px;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: black;
 }
 

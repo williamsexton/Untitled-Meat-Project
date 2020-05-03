@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductDisplay from './product_display';
+
 export default class CategoryShow extends React.Component {
   componentDidMount() {
     const { fetchProduct } = this.props;

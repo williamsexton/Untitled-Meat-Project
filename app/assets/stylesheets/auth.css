@@ -6,6 +6,7 @@
      align-items: center;
      width: 47%;
      border: solid 1px #dadce0;
+     box-shadow: rgb(225, 225, 225) 1px 1px 6px;
  }
  #auth-input{
      width: 93%;
@@ -93,4 +94,9 @@
 }
 #session-errors{
     margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+ #auth-form{
+     width: 90%;
+ }
 }

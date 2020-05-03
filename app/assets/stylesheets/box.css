@@ -1,0 +1,36 @@
+#box-modal-outer{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(150, 150, 150, 0.5);
+
+}
+#box-modal-inner{
+  position: fixed;
+  margin: auto, auto;
+  width: 40vw;
+  height: 100vh;
+  right: 0px;
+  background: white;
+  z-index: 10;
+  animation-name: enter;
+  animation-duration: 1s;
+  /* background-color: white; */
+}
+
+#box-modal-inner.box-exit{
+  animation-name: exit;
+  animation-duration: .75;
+  right: -40vw;
+}
+@keyframes enter {
+  from {right: -40vw;}
+  to {right: 0vw;}
+}
+@keyframes exit {
+  from {right: 0vw;}
+  to {right: -40vw;}
+}
