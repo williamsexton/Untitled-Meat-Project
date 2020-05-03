@@ -11,7 +11,7 @@
 #box-modal-inner{
   position: fixed;
   margin: auto, auto;
-  width: 40vw;
+  width: 85vw;
   height: 100vh;
   right: 0px;
   background: white;
@@ -24,6 +24,24 @@
 #box-modal-inner.box-exit{
   animation-name: exit;
   animation-duration: .75;
+  right: -85vw;
+}
+@keyframes enter {
+  from {right: -85vw;}
+  to {right: 0vw;}
+}
+@keyframes exit {
+  from {right: 0vw;}
+  to {right: -85vw;}
+}
+
+@media screen and (min-width: 600px) {
+ #box-modal-inner{
+   width: 40vw;
+ }
+ #box-modal-inner.box-exit{
+  animation-name: exit;
+  animation-duration: .75;
   right: -40vw;
 }
 @keyframes enter {
@@ -33,4 +51,5 @@
 @keyframes exit {
   from {right: 0vw;}
   to {right: -40vw;}
+}
 }

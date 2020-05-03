@@ -22,8 +22,14 @@ export default (props) => {
           <div id="footer-body-1">
             <h3>Progress on the Wesbite</h3>
             <p>
-              It is May 1st 2020, the homepage and category/product show pages are done
+              It is May 1st 2020, the homepage and category/product show pages are done.
               I am moving on to develop the cart and orders systems
+            </p>
+            <p>
+              It is May 3rd 2020, I have finished the backend, and the redux cycle for
+              boxes, orders, and inclusions. I added a mobile version to the website and stumped
+              out the CSS animations for the the box's parent element. today I will work on  the
+              box/order/inclusion react cycle
             </p>
           </div>
           <div id="footer-body-2">

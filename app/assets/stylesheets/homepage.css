@@ -146,6 +146,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 #home-footer-title{
   font-size: 27px;
@@ -175,3 +176,23 @@
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+ #home-category-links{
+     padding-top: 90px;
+ }
+ #home-footer{
+ height:700px;
+ }
+ #home-footer-title{
+ margin-top: 20px;
+ text-align: center;
+ }
+ #home-banner{
+   height: 45vh;
+ }
+}
+#searchbar * {
+  width: 100vw;
+  position: fixed;
+  left: 0px;
+}
