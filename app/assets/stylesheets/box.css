@@ -37,19 +37,139 @@
 
 @media screen and (min-width: 600px) {
  #box-modal-inner{
-   width: 40vw;
+   width: 50vw;
  }
  #box-modal-inner.box-exit{
   animation-name: exit;
   animation-duration: .75;
-  right: -40vw;
+  right: -50vw;
 }
 @keyframes enter {
-  from {right: -40vw;}
+  from {right: -50vw;}
   to {right: 0vw;}
 }
 @keyframes exit {
   from {right: 0vw;}
-  to {right: -40vw;}
+  to {right: -50vw;}
 }
+}
+
+.box-row{
+  display: flex;
+  border-top: rgb(206, 206, 206) solid 1px;
+  border-bottom: rgb(186, 186, 186) solid 1px;
+}
+
+.box-row-image{
+  margin: 20px;
+  width: 10vw;
+  height: 10vw;
+  margin-left: 20px;
+}
+.box-row-name{
+  font-size: 18px;
+  text-shadow: black 1px 0px 1px;
+}
+.box-row-price{
+  display: flex;
+  align-items: flex-end;
+  justify-self: flex-end;
+}
+.box-row-details{
+  width: 64%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-row-price div{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.box-row-delete button{
+  width: 50%;
+  height: 30px;
+  font-size: 12px; 
+  color: white;
+  background-color: rgb(277, 98, 39);
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 3px;
+}
+ .box-row-delete button:hover{
+  background-color: black;
+  animation-name: buttonAnimation;
+  animation-duration: .5s;
+}
+
+@keyframes buttonAnimation {
+  0%   {background-color: rgb(277, 98, 39);}
+  100% {background-color: black;}
+}
+#box-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 15px;
+}
+
+#box-footer{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#box-options{
+  box-sizing: margin-box;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#box-options button{
+  width: 50%;
+  height: 30px;
+  font-size: 12px; 
+  color: gray;
+  background-color:white;
+  border: solid 1px gray;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 3px;
+}
+#box-options button:hover{
+  background-color: black;
+  animation-name: otherButtonAnimation;
+  animation-duration: .5s;
+}
+@keyframes otherButtonAnimation {
+  0%   {background-color: white;}
+  100% {background-color: black;}
+}
+
+#checkout-button{
+  width: 50%;
+  height: 30px;
+  font-size: 12px; 
+  color: gray;
+  background-color:white;
+  border: solid 1px gray;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 3px;
+}
+#checkout-button:hover{
+background-color: black;
+animation-name: funnyButtonAnimation;
+animation-duration: 15s;
+}
+@keyframes funnyButtonAnimation {
+  0%   {transform: rotate(0deg);}
+  100% {transform: rotate(3000deg);}
+}
+
+#box-total, #bob{
+  margin:0px 10px;
 }

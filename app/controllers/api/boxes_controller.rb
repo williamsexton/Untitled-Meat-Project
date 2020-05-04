@@ -1,6 +1,7 @@
 class Api::BoxesController < ApplicationController
   def show
-    @box = Box.find_by(id: params[:id])
+    user = User.find_by(id: params[:id])
+    @box = user.box
     render :show
   end
 end

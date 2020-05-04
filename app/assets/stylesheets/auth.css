@@ -81,6 +81,7 @@
      padding: 12px;
      font-weight: 700;
      margin-bottom: 5px;
+     border-radius: 3px;
  }
  #auth-button.signup{
      margin-top: 25px;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import GreetingContainer from '../greeting/greeting_container';
+import BoxContainer from '../box/box_container';
 
 const NavBar = (props) => {
   return (
@@ -8,7 +9,9 @@ const NavBar = (props) => {
       <div id="dummy"> 
         {(props.boxDisplay) ? (
           <div onClick={(e) => props.hideBox(e)} id="box-modal-outer">
-            <div id="box-modal-inner"> box goes here</div>
+            <div id="box-modal-inner">
+              <BoxContainer/>
+            </div>
           </div>
         ) : null}
       </div>

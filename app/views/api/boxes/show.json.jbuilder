@@ -18,7 +18,7 @@ json.products do
   incs.each do |inclusion|
     product = inclusion.product
     json.set! product.id do
-      json.extract! product, :id, :name, :price 
+      json.extract! product, :id, :description, :name, :price,  :subscription_price
       json.imgUrl url_for(product.photo)
     end
   end
