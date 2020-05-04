@@ -13,7 +13,7 @@ class Order < ApplicationRecord
   belongs_to :user
 
   def populate_order
-    incs = self.user.box
+    incs = self.user.box.inclusions
     incs.each do |inc|
       inc.update({includable_id: self.id, includable_type: "Order"})
     end

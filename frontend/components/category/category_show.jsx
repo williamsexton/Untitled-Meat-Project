@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductDisplay from './product_display';
+import ProductDisplay from '../product/product_display';
 import {Link} from 'react-router-dom'
 export default class CategoryShow extends React.Component {
   componentDidMount() {

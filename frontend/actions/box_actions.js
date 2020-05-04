@@ -20,6 +20,3 @@ export const fetchBox = (id) => (dispatch) => (
   API.fetchBox(id).then(({ boxes, products, inclusions }) => dispatch(receiveBox({ boxes, products, inclusions })))
 );
 
-export const createBox = (box) => (dispatch) => (
-  API.createBox(box).then(({ boxes, products, inclusions }) => dispatch(receiveBox({ boxes, products, inclusions })))
-);

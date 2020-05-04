@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import CategoryDisplay from './category_display'
+import CategoryDisplay from '../category/category_display'
 export default class HomeDisplay extends React.Component {
   constructor(props) {
     super(props);

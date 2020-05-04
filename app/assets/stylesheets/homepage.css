@@ -90,6 +90,7 @@
   align-items: center;
   justify-content: center;
   height:70vh;
+  text-align: center;
   font-size: 40px;
   position: relative;
   z-index: -1;
@@ -190,6 +191,21 @@
  #home-banner{
    height: 45vh;
  }
+ #category-show-description{
+  position: absolute;
+  top: 40%;
+  color: aliceblue;
+  text-shadow: 3px 3px black;
+  font-size:30px;
+  padding: 50px;
+}
+.category-show-title{
+  position: absolute;
+  top: 30%;
+  color: aliceblue;
+  text-shadow: 3px 3px black;
+
+}
 }
 #searchbar * {
   width: 100vw;

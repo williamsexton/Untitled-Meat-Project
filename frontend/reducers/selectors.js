@@ -38,3 +38,15 @@ export const boxInclude = (state, userId, productId) => {
   if (!(inclusions instanceof Array)) return false;
   return inclusions.some((inc) => inc.product_id === productId)
 }
+
+export const getOrderInclusions = (state, orderId) => {
+  return (state.entities.orders[orderId].inclusionIds.map(
+    (id) => state.entities.inclusions[id],
+  )
+  );
+};
+export const getOrderProducts = (state, orderId) => {
+  return getOrderInclusions(state, orderId).map(
+    (inclusion) => state.entities.products[inclusion.product_id],
+  );
+};

@@ -65,13 +65,15 @@
   margin-bottom: 20px;
 }
 #show-blurb{
-  padding: 40px;
+  box-sizing: border-box;
+  padding: 15px 0px;
   background: radial-gradient( rgb(255, 251, 175), rgb(226, 224, 181));
   border: solid 1px  rgb(255, 251, 175);
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
 }
+
 
 .product-name{
   padding-top: 20px;
