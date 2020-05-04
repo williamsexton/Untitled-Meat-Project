@@ -1,19 +1,31 @@
 import React from 'react';
-import ProductDisplay from './product_display';
 import { Link } from 'react-router-dom';
 
-const CategoryDisplay = ({ category, products }) => (
-  <div className="category-display">
-    <div className="category-header">
-      <h1 className="category-title">--- {category.name.toUpperCase()} ---</h1>
-      <h2 id="category-blurb"> You can't go wrong with {category.name}</h2>
-      <div id="category-link-outer"><Link className="category-link" to={`/categories/${category.id}`}>SEE ALL {category.name.toUpperCase()} &gt;&gt;</Link></div>
-
+const OrderDisplay = ({ order, products }) => (
+  <div className="category-display order-display">
+    <div className="category-header order-header">
+      <h1 className="category-title order-title">--- ORDER: {order.id} ---</h1>
+      <h1 className="category-title order-title">--- DATE: {order.created_at.slice(0,10)} ---</h1>
+      <h1 className="category-title order-title">--- PRICE: ${order.price}.00 ---</h1>
     </div>
-      <ul className="category-products">
-        {products.slice(0, 3).map((product) => <Link key= { product.id } to={`/products/${product.id}`}><ProductDisplay product={product} /></Link>)}
+    <div id="category-link-outer"><Link className="category-link" to={`/orders/${order.id}`}>SEE ORDER</Link></div>
+    <ul className="category-products order-products">
+      <div className="order-name-list">
+      {products.map((product) => (
+          <div className="order-index-name">{product.name}</div>
+          ))}
+      </div>
+      <div className="order-row">
+        {products.map((product) => (
+          <Link key={product.id} to={`/products/${product.id}`}>
+            <div className="order-row-item">
+              <img className="order-index-image" src={product.imgUrl} alt=""/>
+            </div>
+          </Link>
+        ))}
+      </div>
     </ul>
   </div>
 );
 
-export default CategoryDisplay;
+export default OrderDisplay;

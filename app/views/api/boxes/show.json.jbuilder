@@ -1,10 +1,8 @@
 incs = @box.inclusions
+prods = @box.products
 json.boxes do 
   json.set! @box.id do
     json.partial! 'api/boxes/box', box: @box
-    json.inclusionIds do
-      json.array! incs.map{|inc| inc.id}
-    end
   end
 end
 json.inclusions do

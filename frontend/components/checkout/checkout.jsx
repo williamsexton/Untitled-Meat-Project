@@ -8,7 +8,8 @@ export default class Checkout extends React.Component {
   }
 
   finalize(price, user_id) {
-    this.props.createOrder({ price, user_id }).then(this.props.history.push("/orders"));
+    if (price > 0) this.props.createOrder({ price, user_id })
+    this.props.history.push("/orders");
   }
 
   render() {
@@ -33,14 +34,15 @@ export default class Checkout extends React.Component {
         </ul>
         <div id="checkout-footer">
           <div id="checkout-total">Order Total: ${box.price}.00</div>
+          <button
+            onClick={() => this.finalize(box.price, currentUser)}
+            id="finish-checkout-button"
+            type="submit"
+          >
+            FINALIZE ORDER
+          </button>
+          <Link to="/"><button type="button" id="back-home-button">Back to Shopping</button></Link>
         </div>
-        <button
-          onClick={() => this.finalize(box.price, currentUser)}
-          id="finish-checkout-button"
-          type="submit"
-        >
-          FINALIZE ORDER
-        </button>
 
       </div>
     );

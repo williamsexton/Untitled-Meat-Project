@@ -3,10 +3,10 @@ import React from 'react';
 const OrderRow = (props) => {
 
   const { row } = props;
-  const { name, price, quantity, id, imgUrl } = row;
+  const { name, price, quantity, imgUrl } = row;
 
   return (
-    <li className="box-row">
+    <li className="box-row order-show-row">
       <img className="box-row-image" src={imgUrl} alt="" />
       <div className="box-row-details">
         <div className="box-row-name" >{name}</div>
@@ -19,4 +19,4 @@ const OrderRow = (props) => {
   );
 };
 
-export default OrderRow
+export default OrderRow;

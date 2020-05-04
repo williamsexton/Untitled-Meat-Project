@@ -16,7 +16,6 @@ if @inclusion.includable_type == "Box"
   json.boxes do
     json.set! box.id do
       json.partial! 'api/boxes/box', box: box
-      json.inclusionIds box.inclusions.map{|inc| inc.id}
       
     end
   end

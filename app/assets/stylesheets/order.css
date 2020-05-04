@@ -1,0 +1,101 @@
+.order-row{
+  height:400px;
+  display:flex;
+  flex-direction: row;
+}
+.order-index-image{
+  width: 150px;
+  overflow: hidden;
+  height:150px;
+  padding: 10px;
+}
+
+.category-products.order-products{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 250px;
+}
+.order-name-list{
+  padding-bottom: 20px;
+}
+.order-index-name{
+  padding: 3px;
+}
+.category-header.order-header{
+    text-align: start;
+    display:flex;
+    justify-content: space-between;
+}
+.category-title.order-title{
+    padding: 15px;
+    margin-top: 0px;
+}
+.category-display.order-display{
+    padding: 15px;
+    margin-top: 0px;
+    border: solid 1px rgb(225, 225, 225) ;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    width: 74vw;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    border-radius: 4px;
+}
+.order-index-title{
+  font-size: 27px;
+    font-weight: 800;
+    margin-top: 40px;
+    text-shadow: 2px 0px 2px black;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#back-home-button{
+     font-size: 20px; 
+     margin-top: 10px;
+     color: white;
+     background-color: rgb(277, 98, 39);
+     cursor: pointer;
+     padding: 12px;
+     font-weight: 700;
+     margin-bottom: 5px;
+     border-radius: 3px;
+}
+
+#back-home-button:hover{
+  background-color: black;
+  animation-name: buttonAnimation;
+  animation-duration: .5s;
+}
+
+@keyframes buttonAnimation {
+  0%   {background-color: rgb(277, 98, 39);}
+  100% {background-color: black;}
+}
+
+#order-show-options{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.box-row.order-show-row{
+  padding: 15px;
+    margin-top: 0px;
+    border: solid 1px rgb(225, 225, 225) ;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    width: 74vw;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    border-radius: 4px;
+}
+#back-home-button.index-button{
+  margin:auto
+}
+.shopp-link{
+  display: flex;
+  justify-content: center;
+}

@@ -24,6 +24,7 @@ const NavBar = (props) => {
         <Switch>
           <Route path="/login" component={null} />
           <Route path="/signup" component={null} />
+          <Route path="/checkout" component={null} />
           <Route path="/" component={GreetingContainer} />
         </Switch>
       </div>

@@ -6,8 +6,8 @@ import OrderShow from './order_show';
 
 const mSTP = (state, ownProps) => {
   let currentUser = state.session.id;
-  let inclusions = (state.entities.orders[ownProps.match.params.id]) ? getOrderInclusions(ownProps.match.params.id) : [];
-  let products = (state.entities.orders[ownProps.match.params.id]) ? getOrderProducts(ownProps.match.params.id) : [];
+  let inclusions = (state.entities.orders[ownProps.match.params.id]) ? getOrderInclusions(state, ownProps.match.params.id) : [];
+  let products = (state.entities.orders[ownProps.match.params.id]) ? getOrderProducts(state, ownProps.match.params.id) : [];
   return {
     order: state.entities.orders[ownProps.match.params.id],
     currentUser,

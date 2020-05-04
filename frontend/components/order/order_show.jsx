@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import OrderRow from './order_row'
 export default class OrderShow extends React.Component {
   componentDidMount() {
     const { fetchOrder } = this.props;
@@ -7,7 +8,7 @@ export default class OrderShow extends React.Component {
   }
 
   render() {
-    const { inclusions, products, order, currentUser } = this.props;
+    const { inclusions, products, order} = this.props;
     const orderRows = [];
     for (let i = 0; i < inclusions.length; i++) {
       orderRows.push({ ...products[i], ...inclusions[i] });
@@ -16,7 +17,8 @@ export default class OrderShow extends React.Component {
       <div id="checkout-main">
         <div id="checkout-header">
           <div id="phantom" />
-          <h1>Order-summary</h1>
+          <h1>Order-summary: </h1>
+          {(order) ? <h1>Order #{order.id}</h1> : null}
         </div>
         <ul id="item-list">
           {orderRows.map((row) => (
@@ -27,10 +29,12 @@ export default class OrderShow extends React.Component {
           ))}
         </ul>
         <div id="checkout-footer">
-          <div id="checkout-total">Order Total: ${order.price}.00</div>
+          <div id="checkout-total">Order Total: ${(order=== undefined ? 0 : order.price )}.00</div>
         </div>
+        <div id="order-show-options">
         <Link to="/orders"> Return to Order Index</Link>
-
+        <Link to="/"><button type="button" id="back-home-button">Back to Shopping</button></Link>
+        </div>
       </div>
     );
   }

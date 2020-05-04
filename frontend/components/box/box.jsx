@@ -38,7 +38,7 @@ export default class Box extends React.Component {
             <button type="submit" onClick={() => hideBox()} id="bob">CONTINUE SHOPPING</button>
               <div id="box-total">Subtotal: ${box.price}.00</div>
           </div> 
-          <Link to="/checkout"><button id="checkout-button" type="button">CHECKOUT</button></Link>
+          <Link onClick={() => hideBox()} to="/checkout"><button id="checkout-button" type="button">CHECKOUT</button></Link>
           
         </div>
       </div>

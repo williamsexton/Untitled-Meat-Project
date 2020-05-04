@@ -31,18 +31,39 @@
  .auth-link-div{
      position: relative;
      padding: 100px;
+     text-align: left;
  }
  .auth-link-div:hover .auth-link{
      display: block;
      position: absolute;
+     width: 120px;
      left: -40px;
      top: 29px;
      padding: 3px;
      border: 1px solid #dadce0;
-     background-color: white;
      font-size: 17px;
+     box-sizing: border-box;
+ }
+ .auth-link-div:hover #order-link{
+     display: block;
+     position: absolute;
+     width: 120px;
+     left: -40px;
+     top: 55px;
+     padding: 3px;
+     border: 1px solid #dadce0;
+     text-align: left;
+     font-size: 17px;
+     box-sizing: border-box;
+
+ }
+ .auth-link{
+     background-color: white;
  }
 
+ .auth-link:hover{
+     background-color: rgb(226, 226, 226);
+ }
 
  #banner{
     position: fixed;
@@ -51,10 +72,11 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    padding: 5px;
+    padding: 5px 50px;
     padding-bottom: 2px;
     border-bottom: solid #dadce0 1px;
     background-color: white;
+    box-sizing: border-box;
 }
 
 

@@ -12,11 +12,17 @@ export default class HomeDisplay extends React.Component {
     fetchCategories();
   }
 
+  // componentWillUpdate() {
+  //   const { fetchCategories } = this.props;
+  //   fetchCategories();
+  // }
+
   render() {
+    debugger
     const { categories, products } = this.props;
     function propProds(category) {
-      const propProds = category.productIds.map((id) => products[id]);
-      return <CategoryDisplay key={category.id} category={category} products={propProds} />
+      const propProducts = category.productIds.map((id) => products[id]);
+      return <CategoryDisplay key={category.id} category={category} products={propProducts} />
     }
     return (
       <ul className="all-categories">

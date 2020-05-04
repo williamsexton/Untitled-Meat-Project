@@ -9,6 +9,7 @@ import OrderShowContainer from './order/order_show_container';
 import Home from './home/home'
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
+import OrderIndexContainer from './order/order_index_container'
 
 const App = () => (
   <div>
@@ -19,7 +20,7 @@ const App = () => (
       <Route path="/checkout" component={CheckoutContainer} />
       <Route path="/categories/:id" component={CategoryShowContainer} />
       <Route path="/orders/:id" component={OrderShowContainer} />
-      {/* <Route path="/orders" component={OrderIndexContainer} /> */}
+      <Route path="/orders" component={OrderIndexContainer} />
       <Route path="/products/:id" component={ProductShowContainer} />
       <Route exact path="/" component={Home} />
       <Redirect path="/" to="/" />

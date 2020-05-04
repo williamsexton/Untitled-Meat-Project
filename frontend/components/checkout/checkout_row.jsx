@@ -6,7 +6,7 @@ const CheckoutRow = (props) => {
   const { name, price, quantity, id, imgUrl } = row;
   
   return (
-    <li className="box-row">
+    <li id="checkout-row" className="category-display order-display">
       <img className="box-row-image" src={imgUrl} alt="" />
       <div className="box-row-details">
         <div className="box-row-name" >{name}</div>

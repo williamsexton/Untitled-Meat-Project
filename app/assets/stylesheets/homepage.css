@@ -103,7 +103,7 @@
 }
 #category-show-description{
   position: absolute;
-  top: 60%;
+  top: 35%;
   color: aliceblue;
   text-shadow: 3px 3px black;
   padding: 50px;
@@ -193,7 +193,7 @@
  }
  #category-show-description{
   position: absolute;
-  top: 40%;
+  top: 10%;
   color: aliceblue;
   text-shadow: 3px 3px black;
   font-size:30px;

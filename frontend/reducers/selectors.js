@@ -22,15 +22,15 @@ export const getUserBoxId = (state, id) => {
 
 export const getBoxInclusions = (state, id) => {
 
-  const box = getUserBox(state, id)
-  if (Object.keys(box).length === 0) return {};
+  const box = getUserBox(state, id);
+  if (Object.keys(box).length === 0) return [];
   return box.inclusionIds.map((incId) => state.entities.inclusions[incId]);
 };
 
 export const getBoxProducts = (state, id) => {
-  const inclusions = getBoxInclusions(state, id);
-  if (Object.keys(inclusions).length === 0) return [];
-  return inclusions.map((inclusion) => state.entities.products[inclusion.product_id]);
+  const box = getUserBox(state, id);
+  if (Object.keys(box).length === 0) return [];
+  return box.productIds.map((productId) => state.entities.products[productId]);
 };
 
 export const boxInclude = (state, userId, productId) => {
@@ -46,7 +46,8 @@ export const getOrderInclusions = (state, orderId) => {
   );
 };
 export const getOrderProducts = (state, orderId) => {
-  return getOrderInclusions(state, orderId).map(
-    (inclusion) => state.entities.products[inclusion.product_id],
-  );
+  if (state.entities.orders[orderId] === undefined) return [];
+  const order = state.entities.orders[orderId];
+  if (order.productIds === undefined) return [];
+  return order.productIds.map((id) => state.entities.products[id]);
 };
