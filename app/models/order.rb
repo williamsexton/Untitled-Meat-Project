@@ -1,6 +1,5 @@
 class Order < ApplicationRecord
-  validates :price, :product_id, :includable_id, :includable_type, presence:true
-  validates :product_id, uniqueness:{ scope: [:includable_id, :includable_type] }
+  validates :price, presence:true
 
   after_create :populate_order
 

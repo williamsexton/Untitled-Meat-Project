@@ -119,19 +119,19 @@ inclusions = Inclusion.create([
     
     ])
     
-    testman = User.create({email:"testman", password:"testman"})
-    testman_box = testman.box
+    # testman = User.create({email:"testman", password:"testman"})
+    # testman_box = testman.box
     
-    box_inclusions = Inclusion.create([
-        {product_id: meat1.id, quantity: 1, includable_id: testman_box.id, includable_type:"Box"},
-        {product_id: meat3.id, quantity: 3, includable_id: testman_box.id, includable_type:"Box"},
-        {product_id: meat6.id, quantity: 5, includable_id: testman_box.id, includable_type:"Box"}
-    ])
+    # box_inclusions = Inclusion.create([
+    #     {product_id: meat1.id, quantity: 1, includable_id: testman_box.id, includable_type:"Box"},
+    #     {product_id: meat3.id, quantity: 3, includable_id: testman_box.id, includable_type:"Box"},
+    #     {product_id: meat6.id, quantity: 5, includable_id: testman_box.id, includable_type:"Box"}
+    # ])
     
-    testman_order = Order.create({price: testman_box.boxtotal, user_id: testman.id})
+    # testman_order = Order.create({price: testman_box.boxtotal, user_id: testman.id})
     
-    order_inclusions = Inclusion.create([
-        {product_id: meat1.id, quantity: 1, includable_id: testman_order.id, includable_type:"Order"},
-        {product_id: meat3.id, quantity: 3, includable_id: testman_order.id, includable_type:"Order"},
-        {product_id: meat6.id, quantity: 5, includable_id: testman_order.id, includable_type:"Order"}
-    ])
+    # order_inclusions = Inclusion.create([
+    #     {product_id: meat1.id, quantity: 1, includable_id: testman_order.id, includable_type:"Order"},
+    #     {product_id: meat3.id, quantity: 3, includable_id: testman_order.id, includable_type:"Order"},
+    #     {product_id: meat6.id, quantity: 5, includable_id: testman_order.id, includable_type:"Order"}
+    # ])
