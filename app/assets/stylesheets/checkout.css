@@ -11,8 +11,8 @@
 #checkout-footer{
   display:flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
-  margin: 10px 60px;
+  justify-content: space-between;
+  margin: 10px 13vw;
 }
 
 #checkout-footer div{
@@ -54,3 +54,4 @@
   justify-content: flex-end;
   margin-right: 30px;
 }
+

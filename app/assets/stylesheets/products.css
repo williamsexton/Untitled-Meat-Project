@@ -159,6 +159,7 @@
   width:29vw; 
   height:28vw;
   margin:0px;
+  opacity: .75;
 }
 
 @keyframes hoverAnimation {

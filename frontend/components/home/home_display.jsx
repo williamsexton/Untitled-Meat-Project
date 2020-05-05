@@ -18,7 +18,6 @@ export default class HomeDisplay extends React.Component {
   // }
 
   render() {
-    debugger
     const { categories, products } = this.props;
     function propProds(category) {
       const propProducts = category.productIds.map((id) => products[id]);

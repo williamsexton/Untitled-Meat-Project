@@ -18,6 +18,11 @@
   z-index: 10;
   animation-name: enter;
   animation-duration: 1s;
+  overflow: auto;
+  
+  padding: 15px 25px;
+  box-sizing: border-box;
+
   /* background-color: white; */
 }
 
@@ -159,6 +164,7 @@
   cursor: pointer;
   font-weight: 700;
   border-radius: 3px;
+  margin-bottom: 30px;
 }
 #checkout-button:hover{
 background-color: black;
@@ -168,4 +174,66 @@ animation-duration: .5s;
 
 #box-total, #bob{
   margin:0px 10px;
+}
+select{
+  background-color: white;
+    border-color: #dbdbdb;
+    color: #363636;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    max-width: 100%;
+    outline: none;
+    position: relative;
+    border-radius: 0;
+    -webkit-appearance: none;
+    padding: 10px 20px;
+    width: 90px
+}
+#selector::after{
+  position: absolute;
+  content: "⌄";
+  font-size: 30px;
+  right: 8px;
+  top: -3px;
+  pointer-events: none;
+}
+#selector{
+  display:flex;
+  border: solid 1px black;
+  width: 80px;
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+#box-x{
+  border-radius: 50%;
+  background-color: white;
+  border: solid 1px black;
+  cursor: pointer;
+  padding: 2px 5px 3px
+}
+
+#box-x:hover{
+  background-color: #dadce0;
+  animation-name: thirdButtonAnimation;
+  animation-duration: .5s;
+}
+@keyframes thirdButtonAnimation {
+  0%   {background-color: white; }
+  100% {background-color: #dadce0; }
+}
+
+#box-protec-main{
+  background-image: url("https://meat-project-seed.s3-us-west-1.amazonaws.com/box-login-picture.png");
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+#box-protec-main img{
+  position: relative;
+  top: -200px;
+  right: 110px;
 }

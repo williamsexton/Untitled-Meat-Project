@@ -9,7 +9,7 @@ export const getCategoryProducts= (state, id) => {
 export const getUserBox = (state, id) => {
   const boxes = Object.values(state.entities.boxes);
   if (!boxes.length) return [];
-  const box = boxes.filter((boxi)=> boxi.user_id === id)
+  const box = boxes.filter((boxi)=> boxi.user_id === id);
   if (!box.length) return [];
   return box[0];
 };
@@ -51,3 +51,18 @@ export const getOrderProducts = (state, orderId) => {
   if (order.productIds === undefined) return [];
   return order.productIds.map((id) => state.entities.products[id]);
 };
+
+
+export const isItemInBox = (state, productId) => {
+  let userBox;
+  for (let key in state.entities.boxes) {
+    if (state.entities.boxes[key].user_id === state.session.id) userBox = state.entities.boxes[key];
+  }
+  if (!userBox) return undefined;
+  if (!(userBox.productIds.includes(parseInt(productId)))) return false;
+  const inclusion = userBox.inclusionIds
+    .map(id => state.entities.inclusions[id])
+    .filter(inclusion => inclusion.product_id == productId)[0];
+  return inclusion;
+
+}

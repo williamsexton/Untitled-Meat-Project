@@ -1,6 +1,7 @@
 import React from 'react';
+import { updateInclusion } from '../../actions/inclusion_actions';
 
-export default class CategoryShow extends React.Component {
+export default class ProductShow extends React.Component {
   componentDidMount() {
     const { fetchProduct } = this.props;
     fetchProduct();
@@ -13,18 +14,25 @@ export default class CategoryShow extends React.Component {
       inBox,
       boxId,
       createInclusion,
-      currentUser,
+      updateInclusion,
       match,
       showBox,
     } = this.props;
-    if (!inBox && currentUser) {
+    debugger
+    if (inBox === false) {
       const newInclusion = {
         includable_id: boxId,
-        includable_type: "Box",
+        includable_type: 'Box',
         product_id: match.params.id,
         quantity: 1,
       };
-      createInclusion(newInclusion).then(showBox())
+      createInclusion(newInclusion).then(showBox());
+    } else if (inBox === undefined) {
+      showBox();
+    } else {
+      const inclusion = inBox;
+      inclusion.quantity += 1;
+      updateInclusion(inclusion).then(showBox());
     }
   }
 

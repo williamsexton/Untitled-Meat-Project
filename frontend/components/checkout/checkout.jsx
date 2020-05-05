@@ -18,6 +18,7 @@ export default class Checkout extends React.Component {
     for (let i = 0; i < inclusions.length; i++) {
       boxRows.push({ ...products[i], ...inclusions[i] });
     }
+    (box.price === 0 ) ? (this.props.history.push("/")) : null;
     return (
       <div id="checkout-main">
         <div id="checkout-header">

@@ -20,7 +20,7 @@ export default class Box extends React.Component {
         <div id="box-header">
           <div id="phantom"/>
           <h1>Your Box</h1>
-          <div onClick={ ()=> hideBox() }>x</div>
+          <div id="box-x" onClick={ ()=> hideBox() }>x</div>
         </div>
         <ul id = "item-list">
           {boxRows.map((row) => (
@@ -38,14 +38,18 @@ export default class Box extends React.Component {
             <button type="submit" onClick={() => hideBox()} id="bob">CONTINUE SHOPPING</button>
               <div id="box-total">Subtotal: ${box.price}.00</div>
           </div> 
-          <Link onClick={() => hideBox()} to="/checkout"><button id="checkout-button" type="button">CHECKOUT</button></Link>
+          { (box.price) ? (
+            <Link onClick={() => hideBox()} to="/checkout"><button id="checkout-button" type="button">CHECKOUT</button></Link>
+          ) : <Link onClick={() => hideBox()} to="/"><button id="checkout-button" type="button">FIND MORE MEATS</button></Link> }
           
         </div>
       </div>
     ) : (
-      <div id="box-protec-main">
-        <div>Please <Link onClick={() => hideBox()} to="/login">Log in</Link> to access box features</div>
-      </div>
+      <Link onClick={() => hideBox()} to="/login">
+        <div id="box-protec-main">
+          <img src="https://meat-project-seed.s3-us-west-1.amazonaws.com/box-login-picture.png" alt="" />
+        </div>
+      </Link>
     )
     );
   }
