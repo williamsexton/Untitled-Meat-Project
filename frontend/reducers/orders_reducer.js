@@ -9,11 +9,11 @@ const ordersReducer = (state = {}, action) => {
       return { ...state, ...action.orders };
 
     case RECEIVE_ORDER:
-      return action.orders;
+      return { ...state, ...action.orders };
 
     case RECEIVE_ORDERS:
 
-      return action.orders;
+      return { ...state, ...action.orders };
 
 
     default:
