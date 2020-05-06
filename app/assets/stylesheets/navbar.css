@@ -16,11 +16,7 @@
     justify-content: space-around;
 }
 
-#banner-link{
-     font-weight: bold;
-     font-size: 20px;
-     
- }
+
  .auth-link-div .auth-link{
      display:none;
      font-size: 17px;
@@ -106,3 +102,23 @@
         #gear-span{
             cursor:pointer;
         }
+
+#banner-link a{
+     font-weight: bold;
+     font-size: 20px;
+    display: flex;   
+    align-items: center;
+ }
+
+#banner-link img{
+    width:30px;
+    height:auto;
+    margin:0px 5px;
+}        
+
+#home-banner h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 1px 2px 3px black;
+    text-align: center;
+}

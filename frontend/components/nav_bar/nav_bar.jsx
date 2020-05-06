@@ -17,7 +17,8 @@ const NavBar = (props) => {
       </div>
       <div id="banner-link">
         <Link to="/">
-          Untitled Meat Project
+        <img src="https://meat-project-seed.s3-us-west-1.amazonaws.com/banner-logo.png" alt=""/>
+          <h1>Untitled Meat Project</h1> 
         </Link>
       </div>
       <div id="icons">
