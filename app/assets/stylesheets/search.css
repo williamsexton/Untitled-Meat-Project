@@ -141,15 +141,15 @@
   box-shadow: #dadce0 1px 1px 3px;
 }
 
-#root.spin-on *{
+#root.spin-on > *{
   /* animation-name: spinAnimation; */
   transition-duration: 3s;
   transition-timing-function: linear;
-  transform: rotate(360deg);
+  transform: rotate(30deg);
 }
-#root.spin-off *{
+#root.spin-off > #app * {
   /* animation-name: spinAnimation; */
-  transition-duration: 3s;
+  transition-duration: 8s;
   transition-timing-function: linear;
   transform: rotate(0deg);
 }

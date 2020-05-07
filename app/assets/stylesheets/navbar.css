@@ -46,8 +46,8 @@
      position: absolute;
      width: 120px;
      left: -40px;
-     top: 55px;
-     padding: 3px;
+     top: 65px;
+     padding: 5px;
      border: 1px solid #dadce0;
      text-align: left;
      font-size: 17px;
@@ -130,5 +130,8 @@
     text-align: center;
 }
 
-
+#order-link{
+    position: absolute;
+    top: 10px;
+}
 
