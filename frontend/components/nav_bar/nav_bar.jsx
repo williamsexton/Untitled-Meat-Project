@@ -4,9 +4,18 @@ import GreetingContainer from '../greeting/greeting_container';
 import BoxContainer from '../box/box_container';
 
 const NavBar = (props) => {
+  const toggleNightmare = () => {
+    const root = document.getElementById("root");
+    if (root.className === "nightmare"){
+      root.className = "";
+    } else root.className = "nightmare";
+  }
   return (
     <header id="banner">
-      <div id="dummy"> 
+      <div id="dummy">
+        <button
+        id="nightmare"
+        onClick={toggleNightmare}>wow a button</button> 
         {(props.boxDisplay) ? (
           <div onClick={(e) => props.hideBox(e)} id="box-modal-outer">
             <div id="box-modal-inner">
