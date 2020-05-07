@@ -1,6 +1,5 @@
 import { connect } from 'react-redux';
 import { fetchOrders } from '../../actions/order_actions';
-import { withRouter } from "react-router";
 import OrderIndex from './order_index';
 
 const mSTP = (state, ownProps) => {

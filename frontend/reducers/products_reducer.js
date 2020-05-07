@@ -1,4 +1,4 @@
-import { RECEIVE_PRODUCT } from '../actions/product_actions';
+import { RECEIVE_PRODUCT, RECEIVE_PRODUCTS } from '../actions/product_actions';
 import { RECEIVE_BOX } from '../actions/box_actions';
 import { RECEIVE_ORDER, RECEIVE_ORDERS } from '../actions/order_actions';
 import { RECEIVE_CATEGORIES, RECEIVE_CATEGORY } from '../actions/category_actions';
@@ -9,6 +9,8 @@ const productsReducer = (state = {}, action) => {
   switch (action.type) {
     case RECEIVE_PRODUCT:
       return { ...state, ...action.product };
+    case RECEIVE_PRODUCTS:
+      return { ...state, ...action.products };
     case RECEIVE_CATEGORIES:
       return { ...state, ...action.products };
     case RECEIVE_CATEGORY:

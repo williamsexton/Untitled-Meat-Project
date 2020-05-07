@@ -15,7 +15,7 @@ export const getUserBox = (state, id) => {
 };
 
 export const getUserBoxId = (state, id) => {
-  const box = getUserBox(state,id);
+  const box = getUserBox(state, id);
   if (box instanceof Array) return undefined;
   return box.id
 }
@@ -50,6 +50,11 @@ export const getOrderProducts = (state, orderId) => {
   const order = state.entities.orders[orderId];
   if (order.productIds === undefined) return [];
   return order.productIds.map((id) => state.entities.products[id]);
+};
+
+export const getSearchProducts = (state) => {
+  if (state.ui.filters.searchIds === undefined) return [];
+  return state.ui.filters.searchIds.map((id) => state.entities.products[id]);
 };
 
 

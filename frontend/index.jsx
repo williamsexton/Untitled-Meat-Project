@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/store';
 import Root from './components/root';
 import { login, signup } from './actions/session_actions';
-import { fetchProduct } from './actions/product_actions';
+import { fetchProduct, searchProducts } from './actions/product_actions';
 import { fetchBox } from './actions/box_actions';
 import { fetchOrder, fetchOrders, createOrder} from './actions/order_actions';
 import { createInclusion, updateInclusion, deleteInclusion} from './actions/inclusion_actions';
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.signup = signup;
   window.fetchProduct = fetchProduct;
+  window.searchProducts = searchProducts;
   window.fetchCategory = fetchCategory;
   window.fetchCategories = fetchCategories;
   window.fetchOrder = fetchOrder;

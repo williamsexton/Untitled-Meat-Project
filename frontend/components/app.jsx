@@ -1,24 +1,26 @@
 import React from 'react';
-import { Switch, Redirect,Route} from 'react-router-dom'
+import { Switch, Redirect, Route } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import NavBarContainer from './nav_bar/nav_bar_container';
 import CategoryShowContainer from './category/category_show_container';
 import ProductShowContainer from './product/product_show_container';
 import CheckoutContainer from './checkout/checkout_container';
 import OrderShowContainer from './order/order_show_container';
+import SearchContainer from './search/search_container';
 import Home from './home/home'
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
-import OrderIndexContainer from './order/order_index_container'
+import OrderIndexContainer from './order/order_index_container';
 
 const App = () => (
-  <div>
+  <div id="app" className="shown">
     <NavBarContainer />
     <Switch>
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <ProtectedRoute path="/checkout" component={CheckoutContainer} />
       <Route path="/categories/:id" component={CategoryShowContainer} />
+      <Route path="/search" component={SearchContainer} />
       <ProtectedRoute path="/orders/:id" component={OrderShowContainer} />
       <ProtectedRoute path="/orders" component={OrderIndexContainer} />
       <Route path="/products/:id" component={ProductShowContainer} />

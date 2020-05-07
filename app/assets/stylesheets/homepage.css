@@ -84,7 +84,6 @@
 }
 .category-show-banner{
   width: 100%;
-  background: radial-gradient( yellow, red);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,11 +123,13 @@
 #home-category-links{
   display: flex;
   width: 100%;
-  padding-top:55px;
+  margin-top:45px;
+  padding-top:15px;
   padding-bottom: 12px;
   justify-content: space-evenly;
   background-color: black;
 }
+
 
 
 #bnner-link {
@@ -211,4 +212,8 @@
   width: 100vw;
   position: fixed;
   left: 0px;
+}
+
+#icon{
+    width: 25px;
 }
