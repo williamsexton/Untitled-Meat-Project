@@ -77,6 +77,8 @@
     box-sizing: border-box;
     z-index: 1;
     top:0;
+  box-shadow: #dadce0 1px 1px 3px;
+
 }
 
 

@@ -11,7 +11,7 @@ export default (props) => {
         <Link to={`/categories/2`}> Kitchen Essentials</Link>
         <Link to={`/categories/3`}> Grass Fed</Link>
       </div>
-      <div id="home-banner"> <h1>Banner Goes Here</h1></div>
+      <div id="home-banner"> <h1>Welcome to the MEAT ZONE</h1></div>
       <div id="home-blurb">
         With quality beef you can instantly step up the quality of your life. NEW BEEF DAILY!
       </div>
@@ -30,6 +30,11 @@ export default (props) => {
               boxes, orders, and inclusions. I added a mobile version to the website and stumped
               out the CSS animations for the the box's parent element. today I will work on  the
               box/order/inclusion react cycle
+            </p>
+            <p>
+              It is May 6th, all the main functionality is done. yeehaw! Boxes orders and search all
+              work as intended. I have added a lot of new features very quickly, I intend to get them
+              styled to a tollerable level before friday (May 8th)
             </p>
           </div>
           <div id="footer-body-2">

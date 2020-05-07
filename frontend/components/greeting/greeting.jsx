@@ -32,7 +32,7 @@ class Greeting extends React.Component {
       this.props.history.push('/search');
     } else {
       this.props.searchProducts(this.state.search);
-      var qMan = queryString.stringify(this.state.search);
+      const qMan = queryString.stringify(this.state.search);
       this.props.history.push(`/search?query=${qMan}`);
       this.setState({ search: '' })
     }
@@ -59,13 +59,21 @@ class Greeting extends React.Component {
           </div>
         </div>
         <form className={(!(this.props.searchDisplay)) ? 'shown' : 'hidden'} onSubmit={(e)=> this.handleSearch(e)} id="searchbar">
-            <button  type="submit">🔍</button>
-            <input
-              type="text"
-              value={this.state.search}
-              onChange={(e)=> this.handleChange(e)}
-              placeholder="Search"
-            /></form>
+          <button type="submit">
+            <img
+              id="search-icon"
+              src="https://meat-project-seed.s3-us-west-1.amazonaws.com/icon-search-white.png"
+              alt=""
+            />
+          </button>
+            <div id="neg"/>
+          <input
+            type="text"
+            value={this.state.search}
+            onChange={(e)=> this.handleChange(e)}
+            placeholder="Search"
+          />
+        </form>
       </div>
     );
         }
