@@ -94,13 +94,16 @@
   height: 40px;
   width: 41px;
   z-index: 1;
-  background-color: orange;
+  background-color: rgb(255, 98, 39);
+  border: 2px outset;
+
 }
 #searchbar button:hover{ 
-  background-color: rgb(255, 188, 63);
+  background-color: rgb(252, 135, 92);
 }
 #searchbar button:active{ 
-  background-color: rgb(210, 137, 2);
+  background-color: rgb(194, 52, 0);
+  border:2px inset;
 }
 .seach-header{
   width: 100%;
@@ -114,6 +117,7 @@
   text-shadow: 2px 0px 1px;
   font-size: 45px;
   padding-bottom: 15px;
+  padding-top:20px;
 }
 .search-description{
   font-size: 20px;
@@ -135,4 +139,22 @@
   margin-top: -4px;
   border-bottom: #dadce0 1px solid;
   box-shadow: #dadce0 1px 1px 3px;
+}
+
+#root.spin-on *{
+  /* animation-name: spinAnimation; */
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transform: rotate(360deg);
+}
+#root.spin-off *{
+  /* animation-name: spinAnimation; */
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transform: rotate(0deg);
+}
+
+@keyframes spinAnimation {
+  0%   {transform: rotate(0deg);}
+  100% {transform: rotate(1800deg);}
 }
