@@ -1,7 +1,7 @@
 import { SHOW_SEARCH, HIDE_SEARCH } from '../actions/search_display_actions';
 
 
-const searchDisplayReducer = (state = false, action) => {
+const searchDisplayReducer = (state = true, action) => {
   Object.freeze(state);
   switch (action.type) {
     case SHOW_SEARCH:

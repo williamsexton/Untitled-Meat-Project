@@ -13,7 +13,7 @@ import SignupFormContainer from './session_form/signup_form_container';
 import OrderIndexContainer from './order/order_index_container';
 
 const App = () => (
-  <div id="app" className="shown">
+  <div id="app" className="hidden">
     <NavBarContainer />
     <Switch>
       <AuthRoute path="/login" component={LoginFormContainer} />
