@@ -37,7 +37,13 @@ animation-name: homeCategoryLinkAnimation;
 }
 #root.nightmare #banner{
 animation-name: bannerAnimation;
-  animation-duration: 1.8s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#root.nightmare #searchbar{
+animation-name: searchAnimation;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -63,6 +69,11 @@ animation-name: bannerAnimation;
   50% {transform: rotate(0deg);}
   75% {transform: rotate(-5deg);}
   100% {transform: rotate(0deg);}
+}
+@keyframes searchAnimation {
+  0%   {transform: rotate(90deg);}
+  50% {transform: rotate(190deg);}
+  100% {transform: rotate(90deg);}
 }
 @keyframes categoryTitleAnimation {
   0%   {font-size: 27px;}
@@ -91,4 +102,26 @@ animation-name: bannerAnimation;
   80%  {background-color: rgb(75, 0, 118);}
   90% {background-color: rgb(226, 143, 104);}
   100% {background-color: red;}
+}
+
+#dummy > button{
+  position: sticky;
+  color: white;
+     background-color: rgb(277, 98, 39);
+     cursor: pointer;
+     padding: 12px;
+     font-weight: 700;
+     margin-bottom: 5px;
+     border-radius: 3px;
+}
+
+ #dummy > button:hover{
+  background-color: black;
+  animation-name: buttonAnimation;
+  animation-duration: .5s;
+}
+
+@keyframes buttonAnimation {
+  0%   {background-color: rgb(277, 98, 39);}
+  100% {background-color: black;}
 }

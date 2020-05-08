@@ -15,7 +15,7 @@ const NavBar = (props) => {
       <div id="dummy">
         <button
         id="nightmare"
-        onClick={toggleNightmare}>wow a button</button> 
+        onClick={toggleNightmare}> NIGHTMARE MODE BUTTON <br/> PUSH AT YOUR OWN RISK</button> 
         {(props.boxDisplay) ? (
           <div onClick={(e) => props.hideBox(e)} id="box-modal-outer">
             <div id="box-modal-inner">
