@@ -125,3 +125,11 @@ animation-name: searchAnimation;
   0%   {background-color: rgb(277, 98, 39);}
   100% {background-color: black;}
 }
+
+.music {
+  display:none;
+}
+
+#root.nightmare .music {
+  display:block;
+}
