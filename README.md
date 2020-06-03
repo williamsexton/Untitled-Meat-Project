@@ -18,8 +18,8 @@
     - Orders can be placed
     - Orders can be viewed individually or collectively
   - Search
-    -Search bar drops down from main nav-bar
-    -Products can be searched by name
+    - Search bar drops down from main nav-bar
+    - Products can be searched by name
     
 ## HOW TO USE
   Untitled meat project is designed from the ground up around streamlined use. If you just hop on the website and start clicking, the site itself will guide you through the major features. Aside from basic store navigation, all the major features can be accessed through the icons on the right side of the nav-bar. The user icon allows a user to login, logout, and view their orders, the box icon allows users to view/edit their cart and place orders, and the magnifying glass opens the search-bar.
