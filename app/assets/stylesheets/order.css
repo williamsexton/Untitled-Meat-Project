@@ -2,7 +2,7 @@
   height:400px;
   display:flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
 }
 
 .order-index-image{
@@ -17,6 +17,7 @@
   flex-direction: column;
   align-items: flex-start;
   height: 175px;
+  overflow-x: scroll;
 }
 .order-name-list{
   padding-bottom: 25px;
