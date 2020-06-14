@@ -83,28 +83,32 @@
   transition-timing-function: linear;
 }
 #searchbar input{
-  height: 35px;
+  height: 42px;
   width: 75vw;
+  box-sizing: border-box;
+  padding-left: 15px;
   left: 12.5vw;
   font-size: 30px;
   z-index: 1;
 }
 #searchbar button{
   left: calc(12.5vw - 40px);
-  height: 40px;
+  height: 42px;
   width: 41px;
   z-index: 1;
   background-color: rgb(255, 98, 39);
-  border: 2px outset;
 
 }
+@keyframes buttonAnimation {
+  0%   {background-color: rgb(255, 98, 39);}
+  100% {background-color: black;}
+}
 #searchbar button:hover{ 
-  background-color: rgb(252, 135, 92);
+  background-color: black;
+  animation-name: buttonAnimation;
+  animation-duration: .5s;
 }
-#searchbar button:active{ 
-  background-color: rgb(194, 52, 0);
-  border:2px inset;
-}
+
 .seach-header{
   width: 100%;
   height: 180px;
@@ -115,7 +119,7 @@
 }
 .search-title{
   text-shadow: 2px 0px 1px;
-  font-size: 45px;
+  font-size: 32px;
   padding-bottom: 15px;
   padding-top:20px;
 }

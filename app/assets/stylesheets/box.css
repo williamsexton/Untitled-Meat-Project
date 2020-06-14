@@ -100,7 +100,7 @@
   height: 30px;
   font-size: 12px; 
   color: white;
-  background-color: rgb(277, 98, 39);
+  background-color: rgb(255, 98, 39);
   cursor: pointer;
   font-weight: 700;
   border-radius: 3px;
@@ -112,7 +112,7 @@
 }
 
 @keyframes buttonAnimation {
-  0%   {background-color: rgb(277, 98, 39);}
+  0%   {background-color: rgb(255, 98, 39);}
   100% {background-color: black;}
 }
 #box-header{
@@ -160,7 +160,7 @@
   height: 30px;
   font-size: 12px; 
   color: white;
-  background-color: rgb(277, 98, 39);
+  background-color: rgb(255, 98, 39);
   cursor: pointer;
   font-weight: 700;
   border-radius: 3px;

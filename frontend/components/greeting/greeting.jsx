@@ -66,7 +66,7 @@ class Greeting extends React.Component {
               alt=""
             />
           </button>
-            <div id="neg"/>
+          <div id="neg" />
           <input
             type="text"
             value={this.state.search}

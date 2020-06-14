@@ -52,7 +52,7 @@
 }
 
 @keyframes buttonAnimation {
-  0%   {background-color: rgb(277, 98, 39);}
+  0%   {background-color: rgb(255, 98, 39);}
   100% {background-color: black;}
 }
 
@@ -76,7 +76,7 @@
      font-size: 20px; 
      margin-top: 10px;
      color: white;
-     background-color: rgb(277, 98, 39);
+     background-color: rgb(255, 98, 39);
      cursor: pointer;
      padding: 12px;
      font-weight: 700;

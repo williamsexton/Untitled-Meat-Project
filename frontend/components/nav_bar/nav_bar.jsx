@@ -37,7 +37,7 @@ class NavBar extends React.Component {
           {this.musicPlayer()}
           <button
           id="nightmare"
-          onClick={() => this.toggleNightmare()}> NIGHTMARE MODE BUTTON <br/> PUSH AT YOUR OWN RISK</button> 
+          onClick={() => this.toggleNightmare()}> NIGHTMARE MODE </button> 
           {(this.props.boxDisplay) ? (
             <div onClick={(e) => this.props.hideBox(e)} id="box-modal-outer">
               <div id="box-modal-inner">

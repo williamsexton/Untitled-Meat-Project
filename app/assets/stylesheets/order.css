@@ -19,11 +19,13 @@
   height: 175px;
 }
 .order-name-list{
-  padding-bottom: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 .order-index-name{
+  list-style: circle;
   padding: 3px;
+  margin-left: 50px;
 }
 .category-header.order-header{
     text-align: start;
@@ -65,7 +67,7 @@
      font-size: 20px; 
      margin-top: 10px;
      color: white;
-     background-color: rgb(277, 98, 39);
+     background-color: rgb(255, 98, 39);
      cursor: pointer;
      padding: 12px;
      font-weight: 700;
@@ -80,7 +82,7 @@
 }
 
 @keyframes buttonAnimation {
-  0%   {background-color: rgb(277, 98, 39);}
+  0%   {background-color: rgb(255, 98, 39);}
   100% {background-color: black;}
 }
 
@@ -114,4 +116,6 @@
 
 .category-link.order-link{
   padding-bottom: 15px;
+  margin-bottom: 15px;
+  width: 140px;
 }

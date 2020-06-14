@@ -3,7 +3,6 @@ import HomeDisplayContainer from './home_display_container'
 import {Link} from 'react-router-dom';
 
 export default (props) => {
-    
   return (
     <div className="home-page">
       <div id="home-category-links">
@@ -20,22 +19,10 @@ export default (props) => {
         <h2 id="home-footer-title">--- LATEST FROM UNTITLED MEAT PROJECT ---</h2>
         <div id="home-footer-body">
           <div id="footer-body-1">
-            <h3>Progress on the Wesbite</h3>
-            <p>
-              It is May 1st 2020, the homepage and category/product show pages are done.
-              I am moving on to develop the cart and orders systems
-            </p>
-            <p>
-              It is May 3rd 2020, I have finished the backend, and the redux cycle for
-              boxes, orders, and inclusions. I added a mobile version to the website and stumped
-              out the CSS animations for the the box's parent element. today I will work on  the
-              box/order/inclusion react cycle
-            </p>
-            <p>
-              It is May 6th, all the main functionality is done. yeehaw! Boxes orders and search all
-              work as intended. I have added a lot of new features very quickly, I intend to get them
-              styled to a tollerable level before friday (May 8th)
-            </p>
+            <img className="picture-of-me" src="https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/004/808/medium/Will_Sexton_1.JPG?1583210215" alt=""/>
+            <div>
+              {/* <img src={'../../../app/assets/images/angelist.png'} alt=""/> */}
+            </div>
           </div>
           <div id="footer-body-2">
             <h3>About Me</h3>
