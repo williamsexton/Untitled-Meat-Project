@@ -171,7 +171,7 @@
 }
 #home-footer-body div{
   text-align: center;
-  width: 40%;
+  width: 30%;
   padding:10px;
 }
 #home-footer-body div h3{
@@ -228,4 +228,19 @@
 .picture-of-me{
   width: 146px;
   height: 150px;
+}
+#about-logos{
+  display: flex;
+  justify-content: center;
+}
+#about-logos img{
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+}
+#home-footer-body #footer-body-1{
+  width: 10%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }

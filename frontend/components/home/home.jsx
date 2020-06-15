@@ -20,9 +20,11 @@ export default (props) => {
         <div id="home-footer-body">
           <div id="footer-body-1">
             <img className="picture-of-me" src="https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/004/808/medium/Will_Sexton_1.JPG?1583210215" alt=""/>
-            <div>
-              {/* <img src={'../../../app/assets/images/angelist.png'} alt=""/> */}
-            </div>
+            <span id="about-logos">
+              <a href="https://www.linkedin.com/in/will-sexton-588b961a9/"> <img src="https://meat-project-seed.s3-us-west-1.amazonaws.com/linkedin_icon.png" alt="" /> </a>
+              <a href="https://angel.co/u/william-sexton-1"> <img src="https://meat-project-seed.s3-us-west-1.amazonaws.com/angelist.png" alt="" /> </a>
+              <a href="https://github.com/williamsexton/"><img src="https://meat-project-seed.s3-us-west-1.amazonaws.com/github-icon.png" alt="" /></a>
+            </span>
           </div>
           <div id="footer-body-2">
             <h3>About Me</h3>
