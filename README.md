@@ -1,7 +1,17 @@
 # PRODUCTION README
 
 ## THE GOAL
-  To solidify my understanding of react redux and integrate these frameworks into my full-stack web design toolbox I took 2 weeks to attempt to create a pixel perfect clone of the direct-to-consumer meat sales website, CrowdCow. By maintaining a database of products, carts, orders, and categories, and integrating a redux cycle the goal was to emulate the original websites overall design and specifically its cart and order systems on a single page framework for lightning quick response.
+  To solidify my understanding of react redux and integrate these frameworks into my full-stack web design toolbox, I took 2 weeks to attempt to create a pixel perfect clone of the direct-to-consumer meat sales website, CrowdCow. By maintaining a database of products, carts, orders, and categories, and integrating a redux cycle the goal was to emulate the original websites overall design and specifically its cart and order systems on a single page framework for lightning quick response.
+  
+## TECHNOLOGIES
+  - Postgres
+  - Ruby
+  - Rails
+  - Javascript
+  - React
+  - Redux
+  - AWS S3
+  - Heroku Webhosting
 ## THE END RESULT
   In the end I was unable to create an exact duplicate of the website, I was able to build out nearly every major feature I set out to build, get them styled and implemented, and I was forced to make design choices when it became clear some of the visual effects on the actual website relied on CSS/React libraries I didn't have access to.
   
