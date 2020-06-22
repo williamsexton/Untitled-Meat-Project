@@ -13,8 +13,9 @@
   - AWS S3
   - Heroku Webhosting
 ## THE END RESULT
-  In the end I was unable to create an exact duplicate of the website, I was able to build out nearly every major feature I set out to build, get them styled and implemented, and I was forced to make design choices when it became clear some of the visual effects on the actual website relied on CSS/React libraries I didn't have access to. Regardless, I achieved a complete experience with some /unique/ extras. \n \n
-  ![Screen Capture](https://meat-project-seed.s3-us-west-1.amazonaws.com/trimmedmeat(480).gif)
+  In the end I was unable to create an exact duplicate of the website, I was able to build out nearly every major feature I set out to build, get them styled and implemented, and I was forced to make design choices when it became clear some of the visual effects on the actual website relied on CSS/React libraries I didn't have access to. Regardless, I achieved a complete experience with some /unique/ extras.
+  
+  ![Screen Capture](https://meat-project-seed.s3-us-west-1.amazonaws.com/trimmedmeat(480)+(1).gif)
   
 ## KEY FEATURES
   - User Authentication
